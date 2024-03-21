@@ -4,7 +4,6 @@ import numpy as np
 def contrast_adjustment(images, alpha=1):
     X = []
     for img in images:
-        # thay hàm và biến ở đây
         img = cv2.convertScaleAbs(img, alpha=alpha)
         pixels = img.reshape(1, -1)
 
